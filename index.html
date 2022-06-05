@@ -350,7 +350,7 @@
 		<footer class="footer">
 			<div class="footer-bloc container">
 				<div class="adrblock">
-					<a href="/" class="logo-footer">
+					<a href="/" class="logo">
 						<span class="logo-web">Web</span>
 						<span class="logo-studio-footer">Studio</span>
 					</a>
@@ -399,9 +399,14 @@
 					</ul>
 				</div>
 				<form name="footer-subscribe" class="footer-subscribe">
-					<label for="mail">Подпишитесь на рассылку</label>
-					<input type="email" id="mail" />
-					<button type="submit">Подписаться</button>
+					<label for="mail" class="label">Подпишитесь на рассылку</label>
+					<div class="input-btn-box">
+						<input class="input-footer" type="email" id="mail" placeholder="E-mail" />
+						<button type="submit" class="subscribe-btn">
+							Подписаться
+							<svg class="send-icon" width="24" height="24"><use href="./images/sprite.svg#icon-send"></use></svg>
+						</button>
+					</div>
 				</form>
 			</div>
 		</footer>
@@ -415,21 +420,21 @@
 				</button>
 				<form name="modal-order" class="modal-form">
 					<h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-					<ul class="user-data-list">
-						<li class="user-data-item">
-							<label for="name">Имя</label>
-							<input class="input" type="text" id="name" />
-						</li>
-						<li class="user-data-item">
-							<label for="phone">Телефон</label>
-							<input class="input" type="tel" id="phone" />
-						</li>
-						<li class="user-data-item">
-							<label for="mail">Почта</label>
-							<input class="input" type="email" id="mail" />
-						</li>
-						<li class="user-data-item">
-							<label for="comment">Комментарий</label>
+					<div class="user-data-list">
+					<label class="user-data-item">
+							Имя
+							<input class="input" type="text" id="name" /></label>
+						
+				<label 	class="user-data-item">
+							Телефон
+							<input class="input" type="tel" id="phone" /></label>
+						
+				<label 	class="user-data-item">
+							<label for="mail">Почта
+							<input class="input" type="email" id="mail" /></label>
+						
+					<label class="user-data-item">
+							Комментарий
 							<textarea
 								class="input"
 								name="comment"
@@ -437,9 +442,9 @@
 								cols="30"
 								rows="10"
 								placeholder="Введите текст"
-							></textarea>
-						</li>
-					</ul>
+							></textarea></label>
+						
+					</div>
 					<input type="checkbox" />
 					<label for="terms" class="term-label">
 						Соглашаюсь с рассылкой и принимаю

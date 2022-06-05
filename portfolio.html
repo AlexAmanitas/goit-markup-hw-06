@@ -273,11 +273,15 @@
 					</ul>
 				</div>
 				<form name="footer-subscribe" class="footer-subscribe">
-					<label for="mail">Подпишитесь на рассылку</label>
-					<input type="email" id="mail" />
-					<button type="submit">Подписаться</button>
+					<label for="mail" class="label">Подпишитесь на рассылку</label>
+					<div class="input-btn-box">
+						<input class="input-footer" type="email" id="mail" placeholder="E-mail" />
+						<button type="submit" class="subscribe-btn">
+							Подписаться
+							<svg class="send-icon" width="24" height="24"><use href="./images/sprite.svg#icon-send"></use></svg>
+						</button>
+					</div>
 				</form>
-				<!-- <svg width="11" height="8" fill="#fff"><use href="./images/sprite.svg#icon-vector"></use></svg> -->
 			</div>
 		</footer>
 	</body>
