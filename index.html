@@ -420,37 +420,40 @@
 				</button>
 				<form name="modal-order" class="modal-form">
 					<h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-					<div class="user-data-list">
-					<label class="user-data-item">
-							Имя
-							<input class="input" type="text" id="name" /></label>
-						
-				<label 	class="user-data-item">
-							Телефон
-							<input class="input" type="tel" id="phone" /></label>
-						
-				<label 	class="user-data-item">
-							<label for="mail">Почта
-							<input class="input" type="email" id="mail" /></label>
-						
-					<label class="user-data-item">
-							Комментарий
-							<textarea
-								class="input"
-								name="comment"
-								id="comment"
-								cols="30"
-								rows="10"
-								placeholder="Введите текст"
-							></textarea></label>
-						
-					</div>
-					<input type="checkbox" />
-					<label for="terms" class="term-label">
-						Соглашаюсь с рассылкой и принимаю
-						<a href="">Условия договора</a>
+					<label class="user-data-label">
+						<svg class="form-icon" width="18" height="18">
+							<use href="./images/sprite.svg#icon-person-black"></use>
+						</svg>
+						Имя
+						<input class="input" type="text" name="username" />
 					</label>
-					<button type="submit">Отправить</button>
+					<label class="user-data-label">
+						<svg class="form-icon" width="18" height="18">
+							<use href="./images/sprite.svg#icon-phone-black"></use>
+						</svg>
+						Телефон
+						<input class="input" type="tel" name="phone" />
+					</label>
+					<label class="user-data-label">
+						<svg class="form-icon" width="18" height="18">
+							<use href="./images/sprite.svg#icon-email-black"></use>
+						</svg>
+						Почта
+						<input class="input" type="email" name="mail" />
+					</label>
+					<label class="user-data-label">
+						Комментарий
+						<textarea class="input" name="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+					</label>
+
+					<label class="term-label">
+						<input type="checkbox" class="term-check" />
+						<svg class="icon-frame" width="16" height="15"><use href="./images/sprite.svg#icon-frame"></use></svg>
+						<svg class="icon-check" width="16" height="15"><use href="./images/sprite.svg#icon-check"></use></svg>
+						<span class="span">Соглашаюсь с рассылкой и принимаю</span>
+						<a class="terms-of-use-link" href="">Условия договора</a>
+					</label>
+					<button type="submit" class="btn-send">Отправить</button>
 				</form>
 			</div>
 		</div>
